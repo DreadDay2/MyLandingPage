@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kacper Rozwalka">
+    <meta name="description" content="Designing eye catching thumbnails, editing your social media content, helping to build personal brand">
+    <meta name="keywords" content="youtube, thumbnails, instagram, tiktok, short, content, video, editing, graphic, designer, personal, brand, thumbnail, adobe, photoshop">
+    <title>Rozwalka.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <div class="main">
+      <div class="content">
+        <div class="lan1">
+          <p class="p_name">
+            <span class="text">
+            </span>
+          </p>
+        </div>
+        <div class="start">
+          <a href="#1"><button><p id="text_button">Step into my world!</p></button></a>
+        </div>
+      </div>
+      <div class="bg" id="1">
+        <div class="info">
+          <div class="info_1">
+            <!--<button id="button" onclick="change()">Light</button>-->
+            <!--<button id="button_2" onclick="change_2()">Dark</button>-->
+            <h2>Kacper Rozwalka - FREELANCER</h2>
+            <p>
+              <span>The polish freelancer specialized in web designing and content creating. I am working in <span class="distinction">HTML&CSS and JavaScript</span>. Actually I am in 5th class in Polish</span>
+              <span>technical school on IT class. Programming is my hobby, I am <span class="distinction">learning by myself</span> without bootcamps or high pay lessons.</span>
+              <span>Apart from programming my second hobby is <span class="distinction">photography</span>.</span>
+              <span>I am also wokring in Adobe Creative Cloud apps like <span class="distinction">Photoshop or Lightroom</span>, where I am making <span class="distinction">thumbnails, photo edit, color grading etc</span>.</span>
+              <span> Some things which I made, I am publishing on my <span class="distinction">instagram account</span>. I always try to do best in anything I am working.</span>
+              <span>I am open for the <span class="distinction">new ideas, experience and upgrading my skills</span> in various branches of the Internet world.</span><br><br>
+              <span><span class="distinction">My motto</span> that I have followed all my life is: <b>"Demand from yourself, even if others do not demand from you"</b>.</span>
+            </p>
+          </div>
+            <div class="info_1_1">
+              <div class="image_p">
+                  <!--<div class="self_photo">-->
+                      <!--<img src="/img/me_2.jpg">-->
+                  <!--</div>-->
+                  <div class="info_1_1_span">
+                    <img src="/img/me_2.jpg" id="my_img">
+                    <span>I am making a <span class="distinction">lot of things</span>. Of course, you will not believe me until <span class="distinction">you see it</span>.
+                    <br> Check my portfolio from graphic design, web design and even more!:
+                    <br> <a href="projects/projects.php">My portfolio (yes it open in another site)</a>
+                    <br>
+                    <br>Also check my socials:
+                    <br> <i class="fa-brands fa-instagram"></i>&nbsp;<a href="https://www.instagram.com/photos_its_my_life/">Instagram</a>
+                    <br> <i class="fa-brands fa-discord"></i>&nbsp;<a href="https://discordapp.com/users/468030948244586498">Discord</a>
+                    <br> <i class="fa-brands fa-facebook"></i>&nbsp;<a href="https://www.facebook.com/kacper.rozwalka">Facebook</a>
+                    <br> <i class="fa-brands fa-whatsapp"></i>&nbsp;<a href="https://Wa.me/+48726100724">Whatsapp</a>
+                    <br> <i class="fa-solid fa-user-pen"></i>&nbsp;<a href="calendar/calendar.html">Book a call</a>
+                    <br> <i class="fa-regular fa-paper-plane"></i>&nbsp;<a href="mailto: kacper.rozwalka@gmail.com">Mail</a> 
+                    </span>
+                  </div>
+              </div>
+            </div>
+            <footer>
+              <span id="footer_description"></span>
+            </footer>
+            <script>
+              const date = new Date();
+              const current_year = date.getFullYear();
+              document.getElementById("footer_description").innerHTML = `&copy; ${current_year} <a href="#">Rozwalka.com</a> All rights reserved`;
+            </script>
+        <!--
+        <nav>
+          <h1>Check my links!</h1>
+          <ul>
+            <li><a href="me.html">CONTACT</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="socials.html">Social media</a></li>
+          </ul>
+        </nav>
+        -->
+        </div> 
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".text", {
+          strings: ["Kacper Rozwalka", "Content editor", "Web designer"],
+          typeSpeed: 100,
+          //typeSpeed: 10000,
+          backSpeed: 70,
+          loop: true
+        })
+      </script>
+  </body>
+</html>

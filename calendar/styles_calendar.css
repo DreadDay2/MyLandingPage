@@ -1,0 +1,291 @@
+:root{
+    --basic_bg: rgb(58,153,180);
+    --gradient_bg: linear-gradient(20deg, rgba(58,153,180,1) 0%, rgba(71,176,150,1) 50%, rgba(69,252,161,1) 100%);
+    --gradient_bg2: linear-gradient(90deg, rgba(58,153,180,1) 0%, rgba(71,176,150,1) 50%, rgb(63, 231, 147) 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+@keyframes bg_animation{
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+.info_land{
+    background-color: rgb(18, 17, 17);
+    margin-top: 5px;
+    padding: 40px 40px 40px 40px;
+    height: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.info_1{
+    backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+    background: rgb(18, 17, 17);
+    color: white;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px 40px 40px;
+    outline-style: solid;
+    
+}
+
+.input_values input, .input_values label{
+    width: 100%;
+    padding: 7px 7px 7px 7px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: none;
+    margin-bottom: 20px;
+
+}
+
+.input_values input{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.input_values input:focus{
+    border: 4px solid rgba(71,176,150,1);
+    outline: none !important;
+}
+
+.input_values label{
+    display: flex;
+    width: 60%;
+    font-weight: bolder;
+}
+
+.input_values{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 35%; 
+}
+
+footer{
+    backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+    background: rgb(18, 17, 17);
+    color: white;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    outline-style: solid;
+    text-align: center;
+}
+
+.info h2{
+   padding: 20px 20px 20px 20px;
+   outline-style: solid;
+}
+
+.info_1 p{
+    padding: 20px 20px;
+    line-height: 1.6;
+    outline-style: solid;
+}
+
+.lan1{
+    background: white;
+    width: 70vw;
+    padding: 4rem;
+}
+
+.bg{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: rgb(18, 17, 17);
+    padding: 1.5em;
+}
+
+button{
+    font-family: "Poppins";
+    min-width: 10vw;
+    min-height: 5vh;
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+#text_button{
+    background: var(--basic_bg);
+    background: var(--gradient_bg2);
+    animation: bg_animation 2.5s infinite alternate;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    font-size: 18px;
+    background-size: 400%;
+    text-shadow: 0.3rem;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+#text_button:hover{
+    color: white;
+    outline-style: none;
+}
+
+button:hover{
+    background: var(--basic_bg);
+    background: var(--gradient_bg2);
+    animation: bg_animation 2.5s infinite alternate;
+    background-size: 400%;
+}
+
+.p_name{
+    margin: 0 0 0.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 6rem;
+    color: black;
+    line-height: 0.8;
+    margin: 0;
+    text-align: center;
+}
+
+.distinction{
+    color: rgba(71,176,150,1);
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(69,252,161,1);
+    font-weight: bold;
+}
+
+
+
+img{
+    border-radius: 100px;
+    padding: 10px 10px 10px 10px;
+    background: white;
+    width: 30%;
+    height: 10%;
+}
+
+.image_p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+}
+
+/*calendar style*/
+
+.container {
+    align-items: center;
+    display: block;
+    height: 0 auto;
+    justify-content: center;
+    width: 94%;
+    padding: 40px 40px 40px 40px;
+    outline-style: solid;
+  }
+  
+  .calendar {
+    background: #2b4450;
+    border-radius: 4px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
+    height: 501px;
+    perspective: 1000;
+    transition: .9s;
+    transform-style: preserve-3d;
+    width: 100%;
+  }
+  
+  /* Front - Calendar */
+  .front {
+    transform: rotateY(0deg);
+    height: 0 auto;
+    padding: 40px 40px 40px 40px;
+    outline-style: solid;
+    background: rgb(18, 17, 17);
+  }
+  
+  .current-date h1 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+  
+  .week-days {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 30px 40px;
+  }
+
+#calendar-table{
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+}
+
+#calendar-body{
+  display: block;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+.current-day{
+  background: rgba(71,176,150,1);
+  border-radius: 70px;
+}
+  
+
+@media screen and (max-width: 540px) {
+    .info{
+        flex-direction: column;
+    }
+
+    .info_1{
+        margin-right: 0 auto;
+        margin-left: 15px;
+    }
+
+    .info_2{
+        margin-top: 20px;
+        width: 100%;
+    }
+}

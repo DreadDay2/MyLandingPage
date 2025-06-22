@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --basic_bg: rgb(58,153,180);
+    --gradient_bg: linear-gradient(20deg, rgba(58,153,180,1) 0%, rgba(71,176,150,1) 50%, rgba(69,252,161,1) 100%);
+    --gradient_bg2: linear-gradient(90deg, rgba(58,153,180,1) 0%, rgba(71,176,150,1) 50%, rgb(63, 231, 147) 100%);
+}
+
+body{
+    margin: 0;
+    overflow: 0;
+    background-color: rgb(18, 17, 17);
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+
+@keyframes bg_animation{
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+.content{
+    background: var(--basic_bg);
+    background: var(--gradient_bg);
+    animation: bg_animation 5s infinite alternate;
+    line-height: 1.6;
+    color: #333;
+    background-size: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 40px;
+    height: 60%;
+    width: 70%;
+}
+
+.info_1_1{
+    backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+    background: rgb(18, 17, 17);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 40px;
+    width: 75%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, label{
+    width: 100%;
+    padding: 7px 7px 7px 7px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: none;
+    margin-bottom: 5px;
+
+}
+
+input{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border: 2px solid rgba(71,176,150,1);
+    outline: none !important;
+}
+
+label{
+    display: flex;
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#error{
+    font-size: 18px;
+    color: rgb(182, 5, 5);
+    font-weight: bolder;
+}
+
+input[type="submit"]{
+    font-family: "Poppins";
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    min-width: 8vw;
+    min-height: 3.5vh;
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #000;
+    font-weight: bolder;
+}
+
+button{
+    font-family: "Poppins";
+    margin-top: 20px; 
+    min-width: 10vw;
+    min-height: 5vh;
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+#text_button{
+    background: var(--basic_bg);
+    background: var(--gradient_bg2);
+    animation: bg_animation 2.5s infinite alternate;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    font-size: 18px;
+    background-size: 400%;
+    text-shadow: 0.3rem;
+    box-sizing: border-box;
+    padding: 10px 60px;
+}
+
+#text_button:hover{
+    color: white;
+}
+
+button:hover{
+    background: var(--basic_bg);
+    background: var(--gradient_bg2);
+    animation: bg_animation 2.5s infinite alternate;
+    background-size: 400%;
+}
+
+input[type="submit"]:hover{
+    background: var(--basic_bg);
+    background: var(--gradient_bg2);
+    animation: bg_animation 2.5s infinite alternate;
+    background-size: 400%;
+    color: white;
+}
+
+.distinction{
+    color: rgba(71,176,150,1);
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(69,252,161,1);
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+}
+
+/*.self_photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    float: left;
+    padding: 10px 0px 10px -140px;
+}*/
+
+@media screen and (max-width: 760px) {
+    .info_1_1{
+        flex-direction: column;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    p{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kacper Rozwalka">
+    <title>Rozwalka.com - Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="styles_calendar.css">
+    <link rel="stylesheet" href="calendar.css">
+    <scirpt src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></scirpt>
+  </head>
+  <body>
+    <div class="main">
+        <div class="bg">
+            <div class="info_land">
+                <div class="info_1">
+                    <p>
+                        <span class="distinction">Book a call</span><span> in avialable date</span>
+            
+                    </p>
+                            <div class="calendar">
+                              <div class="front">
+                                <div class="current-date">
+                                  <h1><span id="data3"></span></h1>
+                                  <h1><span id="data2"> </span> <span id="data" class="distinction"> 
+                                    <script>
+                                      var full_date = new Date(); 
+                                      var rok = full_date.getFullYear(); 
+                                      var miesiac = full_date.toLocaleString('en-EN', {month: 'long'});
+                                      var dzien = full_date.toLocaleString('en-EN', {weekday: 'long'});
+                                      //var numer = full_date.
+                                      document.getElementById("data").innerHTML = rok;
+                                      document.getElementById("data2").innerHTML = miesiac;
+                                      document.getElementById("data3").innerHTML = dzien;
+                                      //document.getElementById("data4").innerHTML = numer;
+                                    </script>
+                                  </span> </h1> 
+                                </div>
+                      
+                                <div class="current-month">
+                                  <ul class="week-days">
+                                    <li>MON</li>
+                                    <li>TUE</li>
+                                    <li>WED</li>
+                                    <li>THU</li>
+                                    <li>FRI</li>
+                                    <li>SAT</li>
+                                    <li>SUN</li>
+                                  </ul>
+                                
+                                <table id="calendar-table">
+                                  <tbody id="calendar-body">
+
+                                  </tbody>
+                                </table>
+                                </div>
+                    <p>
+                        <span><span class="distinction">Enrol for meeting</span> in good for you date</span>
+                    </p>
+                        <form>
+                            <div class="input_values">
+                                <label>FirstName:</label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            <div class="input_values">
+                                <label>LastName:</label>
+                                <input type="text" name="lastname" id="lastname" required>
+                            </div>
+                            <div class="input_values">
+                                <label>E-mail address:</label>
+                                <input type="text" name="email" id="email" required>
+                            </div>
+                            <div class="input_values">
+                                <label>Subject of call:</label>
+                                <input type="text" name="subject" id="subject">
+                            </div>
+                        </form>
+                    <p>
+                        <a href="#"><button><p id="text_button">I am take it</p></button></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
