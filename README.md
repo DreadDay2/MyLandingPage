@@ -1,0 +1,1 @@
+Project of my landing page. It is in developing period and right now I am working on admin panel which can enable to upload a file into server and will automically generate this on website (generating HTML tags with PHP fetching rows from database)
